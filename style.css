@@ -1,1 +1,58 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #e6f4f8; /* világos kék */
+  color: #033b4a;
+}
 
+/* HEADER */
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.logo {
+  width: 180px;
+  margin-bottom: 10px;
+}
+
+/* KÁRTYÁK */
+.card {
+  background: #ffffff;
+  margin: 20px auto;
+  padding: 25px;
+  max-width: 700px;
+  border-radius: 20px; /* lekerekítés */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* GOMB */
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 20px;
+  background: #f4a261; /* narancs */
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e76f51;
+}
+
+/* BLOG */
+.post {
+  background: #f0f8fb;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* GALÉRIA */
+img {
+  width: 45%;
+  margin: 5px;
+  border-radius: 15px;
+}
