@@ -1,0 +1,108 @@
+/* ALAP */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4fbff;
+  color: #0b3c49;
+  text-align: center;
+}
+
+/* HERO */
+.hero {
+  padding: 50px 20px;
+  background: #dff3f8;
+}
+
+.logo {
+  width: 140px;
+  margin-bottom: 15px;
+}
+
+/* GOMB */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: #f4a261;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+/* MAIN */
+main {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* PROGRESS */
+.progress {
+  background: #e3f2f7;
+  height: 12px;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.bar {
+  background: #2a9d8f;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* BLOG */
+.post {
+  background: #f1f9fc;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* GALÉRIA */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 48%;
+  border-radius: 15px;
+}
+
+/* FLOAT BUTTON */
+.floating {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff6b6b;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+/* 📱 MOBIL */
+@media (max-width: 600px) {
+  .gallery img {
+    width: 100%;
+  }
+
+  .logo {
+    width: 110px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
