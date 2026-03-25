@@ -181,6 +181,6 @@ main {
   position: fixed;
   top: 10px;
   left: 20px;
-  width: 80px;
+  width: 120px;
   z-index: 1000;
 }
