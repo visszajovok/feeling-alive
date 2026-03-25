@@ -150,15 +150,10 @@ main {
 }
 /* HEADER SCROLL EFFECT */
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 40px 20px;
   transition: all 0.3s ease;
-  z-index: 1000;
 }
 
 .logo {
@@ -167,10 +162,13 @@ main {
 }
 
 .header.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   justify-content: flex-start;
   padding: 10px 20px;
-}
-
-.header.scrolled .logo {
-  width: 80px;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
 }
