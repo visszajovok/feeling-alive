@@ -1,171 +1,108 @@
-body{
-
-font-family: Arial, sans-serif;
-margin:0;
-
-background:linear-gradient(
-180deg,
-#f6f9ff,
-#eef5ff
-);
-
-color:#333;
-text-align:center;
-
+/* ALAP */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4fbff;
+  color: #0b3c49;
+  text-align: center;
 }
 
-
-.card{
-
-background:white;
-
-max-width:900px;
-
-margin:40px auto;
-
-padding:40px;
-
-border-radius:22px;
-
-box-shadow:0 12px 30px rgba(0,0,0,0.08);
-
+/* HERO */
+.hero {
+  padding: 50px 20px;
+  background: #dff3f8;
 }
 
-
-.logo{
-
-width:260px;
-
+.logo {
+  width: 140px;
+  margin-bottom: 15px;
 }
 
-
-.subtitle{
-
-color:#1c4fa1;
-font-size:18px;
-
+/* GOMB */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: #f4a261;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
 }
 
-
-nav{
-
-margin-top:20px;
-
+/* MAIN */
+main {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
 }
 
-nav a{
-
-margin:0 15px;
-text-decoration:none;
-color:#1c4fa1;
-font-weight:bold;
-
+/* CARD */
+.card {
+  background: white;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
 }
 
-nav a:hover{
-
-color:#ff9a1f;
-
+/* PROGRESS */
+.progress {
+  background: #e3f2f7;
+  height: 12px;
+  border-radius: 10px;
+  margin: 15px 0;
 }
 
-
-.challenge{
-
-background:#eef6ff;
-
+.bar {
+  background: #2a9d8f;
+  height: 100%;
+  border-radius: 10px;
 }
 
-
-.race{
-
-display:flex;
-
-justify-content:center;
-
-gap:40px;
-
-flex-wrap:wrap;
-
-margin-top:20px;
-
+/* BLOG */
+.post {
+  background: #f1f9fc;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
-
-.race-box{
-
-background:white;
-
-padding:20px;
-
-border-radius:15px;
-
-width:150px;
-
-box-shadow:0 6px 18px rgba(0,0,0,0.08);
-
-font-size:24px;
-
+/* GALÉRIA */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 
-
-.total{
-
-margin-top:20px;
-font-weight:bold;
-
+.gallery img {
+  width: 48%;
+  border-radius: 15px;
 }
 
-
-.donate-button{
-
-display:inline-block;
-
-padding:15px 35px;
-
-margin-top:20px;
-
-background:#ff9a1f;
-
-color:white;
-
-border-radius:12px;
-
-font-size:18px;
-
-text-decoration:none;
-
-font-weight:bold;
-
+/* FLOAT BUTTON */
+.floating {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff6b6b;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
 }
 
-.donate-button:hover{
+/* 📱 MOBIL */
+@media (max-width: 600px) {
+  .gallery img {
+    width: 100%;
+  }
 
-background:#e88612;
+  .logo {
+    width: 200px;
+  }
 
-}
-
-
-#timer{
-
-font-size:40px;
-
-font-weight:bold;
-
-color:#1c4fa1;
-
-margin:20px;
-
-}
-
-
-footer{
-
-background:#1c4fa1;
-
-color:white;
-
-padding:30px;
-
-margin-top:40px;
-
+  h1 {
+    font-size: 24px;
+  }
 }
