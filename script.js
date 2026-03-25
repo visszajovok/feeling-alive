@@ -38,3 +38,17 @@ window.addEventListener("scroll", () => {
     logo.classList.remove("scrolled");
   }
 });
+function addDonation() {
+  const input = document.getElementById("donationInput");
+  const list = document.getElementById("donationList");
+
+  if (input.value.trim() === "") return;
+
+  const item = document.createElement("div");
+  item.className = "donation-item";
+  item.innerText = "💛 " + input.value;
+
+  list.appendChild(item);
+
+  input.value = "";
+}
