@@ -131,12 +131,11 @@ main {
   margin-top: 15px;
   flex-wrap: wrap;
 }
-
 .time-box {
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
- 
-}
+
+.time-box {
   padding: 15px;
   border-radius: 15px;
   min-width: 70px;
@@ -175,15 +174,13 @@ main {
 }
 
 .logo {
-  width: 180px;
-  transition: all 0.3s ease;
+  width: 260px;
+  transition: all 0.4s ease;
 }
-
-
 .logo.scrolled {
   position: fixed;
   top: 10px;
   left: 20px;
-  width: 120px;
+  width: 100px;
   z-index: 1000;
 }
