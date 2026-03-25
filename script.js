@@ -30,11 +30,11 @@ setInterval(() => {
 
 }, 1000);
 window.addEventListener("scroll", () => {
-  const logo = document.querySelector(".logo");
+  const header = document.querySelector(".header");
 
   if (window.scrollY > 50) {
-    logo.classList.add("scrolled");
+    header.classList.add("scrolled");
   } else {
-    logo.classList.remove("scrolled");
+    header.classList.remove("scrolled");
   }
 });
