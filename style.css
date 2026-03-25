@@ -136,6 +136,7 @@ main {
 }
 
 .time-box {
+  background: #fff3b0; /* pasztell sárga */
   padding: 15px;
   border-radius: 15px;
   min-width: 70px;
