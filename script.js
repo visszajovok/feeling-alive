@@ -1,12 +1,31 @@
-const verseny = new Date("2026-08-15").getTime();
+const verseny = new Date("2026-05-17T08:00:00").getTime();
+
+function update(id, value) {
+  const el = document.getElementById(id);
+  if (el.innerText != value) {
+    el.innerText = value;
+    el.classList.add("change");
+
+    setTimeout(() => {
+      el.classList.remove("change");
+    }, 200);
+  }
+}
 
 setInterval(() => {
   const most = new Date().getTime();
   const diff = verseny - most;
 
+  if (diff <= 0) return;
+
   const nap = Math.floor(diff / (1000 * 60 * 60 * 24));
   const ora = Math.floor((diff / (1000 * 60 * 60)) % 24);
+  const perc = Math.floor((diff / (1000 * 60)) % 60);
+  const mp = Math.floor((diff / 1000) % 60);
 
-  document.getElementById("ido").innerText =
-    nap + " nap " + ora + " óra";
+  update("nap", nap);
+  update("ora", ora);
+  update("perc", perc);
+  update("mp", mp);
+
 }, 1000);
