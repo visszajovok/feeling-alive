@@ -133,20 +133,9 @@ main {
 }
 
 .time-box {
-  .time-box:nth-child(1) {
-  background: #fff3b0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
-
-.time-box:nth-child(2) {
-  background: #e4c1f9;
-}
-
-.time-box:nth-child(3) {
-  background: #cdb4db;
-}
-
-.time-box:nth-child(4) {
-  background: #bde0fe;
+ 
 }
   padding: 15px;
   border-radius: 15px;
