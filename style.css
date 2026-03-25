@@ -20,8 +20,8 @@ body {
 }
 
 .logo {
-  width: 180px;
-  transition: all 0.4s ease;
+  width: 400px;
+  transition: all 0.8s ease;
 }
 h1 {
   font-size: 32px;
