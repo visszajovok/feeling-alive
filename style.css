@@ -187,3 +187,43 @@ main {
   width: 100px;
   z-index: 1000;
 }
+/* DONATION TAG STYLE */
+
+.donation-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.donation-form input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+
+.donation-form button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background: #f4a261;
+  color: white;
+  cursor: pointer;
+}
+
+.donation-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.donation-item {
+  background: #e4c1f9;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  white-space: nowrap;
+}
