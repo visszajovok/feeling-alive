@@ -23,6 +23,16 @@ body {
   width: 180px;
   transition: all 0.4s ease;
 }
+h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #3b5c66;
+  max-width: 400px;
+}
 
 /* GOMB */
 .btn {
