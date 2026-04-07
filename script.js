@@ -56,9 +56,6 @@ function openStory(week) {
   const popup = document.getElementById("popup");
   const text = document.getElementById("popup-text");
 
-  function openStory(week) {
-  const popup = document.getElementById("popup");
-  const text = document.getElementById("popup-text");
 
   if (week === "week1") {
     text.innerHTML = `
