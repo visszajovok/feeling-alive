@@ -229,9 +229,9 @@ main {
 }
 .about-container {
   display: block;
-  align-items: center;
-  gap: 40px;
+  text-align: center;
 }
+
 
 .about-text {
   text-align: left;
