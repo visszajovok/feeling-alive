@@ -52,3 +52,28 @@ function addDonation() {
 
   input.value = "";
 }
+function openStory(week) {
+  const popup = document.getElementById("popup");
+  const text = document.getElementById("popup-text");
+
+  if (week === "week1") {
+    text.innerHTML = `
+      <h2>Week 1</h2>
+      <p>
+        A typical triathlon training plan usually follows a structure of three weeks of hard work...
+      </p>
+      <p>
+        My nervous system simply can’t handle three full weeks...
+      </p>
+      <p>
+        Thank you Dad. I love you.
+      </p>
+    `;
+  }
+
+  popup.style.display = "flex";
+}
+
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
