@@ -60,7 +60,7 @@ function openStory(week) {
   const popup = document.getElementById("popup");
   const text = document.getElementById("popup-text");
 
-  if (week === "7 weeks out") {
+  if (week === "week1") {
     text.innerHTML = `
       <h2>7 weeks left</h2>
 
