@@ -353,3 +353,11 @@ main {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.popup-content h2 {
+  margin-bottom: 15px;
+}
+
+.popup-content p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
