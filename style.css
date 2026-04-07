@@ -278,3 +278,22 @@ main {
 .gallery video {
   height: 200px;
 }
+.sponsor-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.sponsor-logos img {
+  height: 50px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.sponsor-logos img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
