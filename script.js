@@ -139,9 +139,3 @@ function openStory(week) {
 function closePopup() {
   document.getElementById("popup").style.display = "none";
 }
-  popup.style.display = "flex";
-}
-
-function closePopup() {
-  document.getElementById("popup").style.display = "none";
-}
