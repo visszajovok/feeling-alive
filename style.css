@@ -228,7 +228,7 @@ main {
   white-space: nowrap;
 }
 .about-container {
-  display: flex;
+  display: block;
   align-items: center;
   gap: 40px;
 }
@@ -382,10 +382,4 @@ main {
 
 .story-card:hover {
   transform: translateY(-5px) scale(1.03);
-}
-.profile-img {
-  display: block;
-  margin: 30px auto;
-  width: 180px;
-  border-radius: 50%;
 }
