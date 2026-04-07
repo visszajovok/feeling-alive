@@ -271,3 +271,10 @@ main {
   border-radius: 15px;
   object-fit: cover;
 }
+.gallery iframe {
+  height: 200px;
+}
+
+.gallery video {
+  height: 200px;
+}
