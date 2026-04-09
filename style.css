@@ -382,4 +382,10 @@ main {
 
 .story-card:hover {
   transform: translateY(-5px) scale(1.03);
+  
+}
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: default;
 }
