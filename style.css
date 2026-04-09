@@ -348,11 +348,12 @@ main {
   cursor: pointer;
 }
 .profile-img {
-  display: block;
-  margin: 0 auto 20px auto;
   width: 150px;
+  height: 150px;       
+  object-fit: cover;   
   border-radius: 50%;
 }
+
 .story-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
