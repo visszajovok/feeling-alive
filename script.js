@@ -1,3 +1,13 @@
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDGXFib-1G7M7KkmJQCnhz9RR5rzDlfXbY",
+  authDomain: "feeling-alive.firebaseapp.com",
+  projectId: "feeling-alive",
+  storageBucket: "feeling-alive.firebasestorage.app",
+  messagingSenderId: "533691571866",
+  appId: "1:533691571866:web:9c37ba90866d38b35a0923",
+  measurementId: "G-RZPYM8QHB8"
+};
 const verseny = new Date("2026-05-17T08:00:00").getTime();
 
 function update(id, value) {
