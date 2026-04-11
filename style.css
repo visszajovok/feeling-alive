@@ -427,3 +427,31 @@ main {
   text-align: center;
   cursor: pointer;
 }
+/* Donation cards */
+.donation-card {
+  background: #f1f9f8;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.25s ease;
+  border: 2px solid transparent;
+}
+
+/* hover effect */
+.donation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  border-color: #2a9d8f;
+}
+
+/* click effect */
+.donation-card:active {
+  transform: scale(0.97);
+}
+
+/* selected state */
+.donation-card.selected {
+  border: 2px solid #2a9d8f;
+  background: #e0f4f1;
+}
