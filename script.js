@@ -12,10 +12,10 @@ const firebaseConfig = {
   messagingSenderId: "533691571866",
   appId: "1:533691571866:web:9c37ba90866d38b35a0923",
   measurementId: "G-RZPYM8QHB8"
-
+};
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-};
+
 async function submitMessage() {
   const input = document.getElementById("supportInput");
   const text = input.value.trim();
