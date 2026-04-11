@@ -9,6 +9,7 @@ const firebaseConfig = {
   measurementId: "G-RZPYM8QHB8"
 };
 function submitMessage() {
+  console.log("CLICKED")
   const input = document.getElementById("supportInput"); // 
   const text = input.value.trim();
 
