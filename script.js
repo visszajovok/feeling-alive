@@ -9,7 +9,7 @@ const firebaseConfig = {
   measurementId: "G-RZPYM8QHB8"
 };
 function submitMessage() {
-  const input = document.getElementById("donationInput"); // fontos: ez a te inputod ID-ja
+  const input = document.getElementById("supportInput"); // 
   const text = input.value.trim();
 
   if (text === "") return;
