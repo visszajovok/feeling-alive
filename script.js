@@ -205,3 +205,9 @@ function selectAmount(amount) {
   // aktuális kártya kijelölése
   event.currentTarget.classList.add("selected");
 }
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("READY");
+
+  const button = document.querySelector("button");
+  button.addEventListener("click", submitMessage);
+});
