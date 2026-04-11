@@ -8,6 +8,19 @@ const firebaseConfig = {
   appId: "1:533691571866:web:9c37ba90866d38b35a0923",
   measurementId: "G-RZPYM8QHB8"
 };
+function submitMessage() {
+  const input = document.getElementById("donationInput"); // fontos: ez a te inputod ID-ja
+  const text = input.value.trim();
+
+  if (text === "") return;
+
+  db.collection("messages").add({
+    text: text,
+    created: Date.now()
+  });
+
+  input.value = "";
+}
 const verseny = new Date("2026-05-17T08:00:00").getTime();
 
 function update(id, value) {
