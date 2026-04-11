@@ -21,6 +21,29 @@ function submitMessage() {
 
   input.value = "";
 }
+db.collection("messages")
+  .orderBy("created", "desc")
+  .onSnapshot(snapshot => {
+    const wall = document.getElementById("supportWall");
+    wall.innerHTML = "";
+
+    let messages = [];
+
+    snapshot.forEach(doc => {
+      messages.push(doc.data().text);
+    });
+
+    messages.sort(() => 0.5 - Math.random());
+
+    messages.slice(0, 10).forEach(msg => {
+      const div = document.createElement("div");
+      div.innerText = msg;
+
+      div.style.animationDelay = Math.random() * 5 + "s";
+
+      wall.appendChild(div);
+    });
+  });
 const verseny = new Date("2026-05-17T08:00:00").getTime();
 
 function update(id, value) {
