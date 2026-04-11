@@ -137,3 +137,7 @@ function openStory(week) {
 function closePopup() {
   document.getElementById("popup").style.display = "none";
 }
+function selectAmount(amount) {
+  const input = document.getElementById("donationInput");
+  input.value = amount + " €";
+}
