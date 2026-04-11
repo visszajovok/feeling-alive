@@ -141,3 +141,17 @@ function selectAmount(amount) {
   const input = document.getElementById("donationInput");
   input.value = amount + " €";
 }
+function selectAmount(amount) {
+  const input = document.getElementById("donationInput");
+
+  // összeg beírása
+  input.value = amount + " €";
+
+  // highlight reset
+  document.querySelectorAll(".donation-card").forEach(card => {
+    card.classList.remove("selected");
+  });
+
+  // aktuális kártya kijelölése
+  event.currentTarget.classList.add("selected");
+}
