@@ -11,43 +11,43 @@ const firebaseConfig = {
   appId: "1:533691571866:web:9c37ba90866d38b35a0923",
   measurementId: "G-RZPYM8QHB8"
 };
-function submitMessage() {
-  console.log("CLICKED")
-  const input = document.getElementById("supportInput"); // 
+async function submitMessage() {
+  const input = document.getElementById("supportInput");
   const text = input.value.trim();
 
   if (text === "") return;
 
-  db.collection("messages").add({
+  await addDoc(collection(db, "messages"), {
     text: text,
     created: Date.now()
   });
 
   input.value = "";
 }
-db.collection("messages")
-  .orderBy("created", "desc")
-  .onSnapshot(snapshot => {
-    const wall = document.getElementById("supportWall");
-    wall.innerHTML = "";
+const q = query(collection(db, "messages"), orderBy("created", "desc"));
 
-    let messages = [];
+onSnapshot(q, snapshot => {
+  const wall = document.getElementById("supportWall");
+  wall.innerHTML = "";
 
-    snapshot.forEach(doc => {
-      messages.push(doc.data().text);
-    });
+  let messages = [];
 
-    messages.sort(() => 0.5 - Math.random());
-
-    messages.slice(0, 10).forEach(msg => {
-      const div = document.createElement("div");
-      div.innerText = msg;
-
-      div.style.animationDelay = Math.random() * 5 + "s";
-
-      wall.appendChild(div);
-    });
+  snapshot.forEach(doc => {
+    messages.push(doc.data().text);
   });
+
+  messages.sort(() => 0.5 - Math.random());
+
+  messages.slice(0, 10).forEach(msg => {
+    const div = document.createElement("div");
+    div.innerText = msg;
+
+    div.style.animationDelay = Math.random() * 5 + "s";
+
+    wall.appendChild(div);
+  });
+});
+
 const verseny = new Date("2026-05-17T08:00:00").getTime();
 
 function update(id, value) {
