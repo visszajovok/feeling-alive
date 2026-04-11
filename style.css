@@ -385,3 +385,45 @@ main {
   pointer-events: none;
   cursor: default;
 }
+.donation-levels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.donation-card {
+  background: #f1f9f8;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.donation-card:hover {
+  transform: translateY(-5px);
+}
+
+.donation-card.highlight {
+  border: 2px solid #2a9d8f;
+}
+
+.donation-card.special {
+  background: linear-gradient(135deg, #2a9d8f, #52b788);
+  color: white;
+}
+
+.race-stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+
+.sponsor-box {
+  background: #fff3cd;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+}
