@@ -13,23 +13,42 @@ const firebaseConfig = {
   appId: "1:533691571866:web:9c37ba90866d38b35a0923",
   measurementId: "G-RZPYM8QHB8"
 };
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
 
-async function submitMessage() {
+function submitMessage() {
   const input = document.getElementById("supportInput");
   const text = input.value.trim();
 
   if (text === "") return;
 
-  await addDoc(collection(db, "messages"), {
+  db.collection("messages").add({
     text: text,
     created: Date.now()
   });
 
   input.value = "";
 }
-const q = query(collection(db, "messages"), orderBy("created", "desc"));
+db.collection("messages")
+  .orderBy("created", "desc")
+  .onSnapshot(snapshot => {
+    const wall = document.getElementById("supportWall");
+    wall.innerHTML = "";
+
+    let messages = [];
+
+    snapshot.forEach(doc => {
+      messages.push(doc.data().text);
+    });
+
+    messages.sort(() => 0.5 - Math.random());
+
+    messages.slice(0, 10).forEach(msg => {
+      const div = document.createElement("div");
+      div.innerText = msg;
+      wall.appendChild(div);
+    });
+  });
 
 onSnapshot(q, snapshot => {
   const wall = document.getElementById("supportWall");
