@@ -1,16 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 
-import { 
-  getFirestore, 
-  collection, 
-  addDoc, 
-  onSnapshot, 
-  query, 
-  orderBy 
-} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
-
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+import { getFirestore, collection, addDoc, onSnapshot, query, orderBy } 
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -21,6 +12,9 @@ const firebaseConfig = {
   messagingSenderId: "533691571866",
   appId: "1:533691571866:web:9c37ba90866d38b35a0923",
   measurementId: "G-RZPYM8QHB8"
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 };
 async function submitMessage() {
   const input = document.getElementById("supportInput");
