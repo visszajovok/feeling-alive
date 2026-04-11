@@ -297,11 +297,7 @@ main {
   opacity: 1;
   transform: scale(1.1);
 }
-.story-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 15px;
-}
+
 
 
 .story-card {
